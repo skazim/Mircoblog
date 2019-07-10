@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% if title %}
+  <title>
+    {{title}} - Flask Web Application
+  </title>
+  {% else %}
+  <title>Welcome - Flask Web Application</title>
+  {% endif %}
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  {% block content %} {%endblock%}
+  <hr>
+  <div>
+    <a href="/index">More list</a>
+  </div>
+</body>
+
+</html>
